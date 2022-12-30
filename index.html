@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Javascript Arithmetic</h1>
+
+    <p id="demo"></p>   
+    <p id="demo2"></p>        
+    <p id="demo3"></p>  
+    <p id="demo4"></p>  
+    <p id="demo5"></p>  
+    <p id="demo6"></p>  
+
+    <script>
+
+        let x = 5;        
+        let y = 2;
+        let z = x*y;
+
+        document.getElementById("demo").innerHTML=z
+        
+        let num1;
+
+        num1 = prompt("OMMMM");
+        document.getElementById("demo2").innerHTML = num1;
+
+        //Assignment operators
+
+        // =
+        // +=
+
+        let x1 =10;
+        let z2 = x1 += 5; // x=x+5;
+        document.getElementById("demo3").innerHTML=z2;
+
+
+        //-=
+        let y1 =20;
+        let yz = y1 -=4; // y1=y1-5
+        document.getElementById("demo4").innerHTML=y1;
+
+        //*=
+        let ze =4;
+        let res = ze *= 2;  // ze = ze*2
+        document.getElementById("demo5").innerHTML=ze;
+
+        //**=
+        let ab =10;
+        let result = ab **= 2;  // uslu sayilar
+        document.getElementById("demo6").innerHTML=result;
+
+        //Comparasion operators
+
+        let a1=5 , b1=10;
+        //<>
+
+        console.log(a1>b1);
+
+        //consolda 63. satirda false yazacak.
+
+        //==
+        console.log(a1==b1);//68. satirda false yazacak.
+        console.log(a1=='5');//true ?
+
+        //===
+        console.log("==="+(a1==='5'));//69. koddan farki tipine de bakiyor. o yuzden false
+
+    
+        //Logical operators
+        //&&->and  , || ->or  , !->not
+        console.log(!true);//false
+
+        let n=5, m=3;
+        console.log((n<6) && (m<5));
+        
+         //Conditional statments
+
+         let age =20;
+
+         if(age>=18){
+            console.log("mekana girebilirsiniz");
+         }
+         else{
+            console.log("giremezsiniz");
+         }
+
+         //accept 2 numbers from user with prompt 
+         //larger one will be written console
+
+         let j,k;
+
+         j = prompt("a");
+
+        k = prompt("a");
+
+        if(j>k){
+            console.log(j +">"+k);
+        }
+        else if(j==k){
+            console.log(j +"="+k);
+        }
+
+        else{
+            console.log(k +">"+j);
+        }
+
+         
+    </script>
+
+</body>
+</html>
