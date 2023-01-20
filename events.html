@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="css/omer.css">
+</head>
+<body>
+    <button id="myBtn">Try Now</button>
+    <script>
+        let btn= document.getElementById("myBtn");
+        btn.addEventListener("click",clicked);
+        btn.addEventListener("mouseover",mouseoverd);
+        btn.addEventListener("mouseout",mouseout);
+
+        function clicked(){
+            console.log("clicked")
+        }
+
+        function mouseoverd(){
+            console.log("mouseover")
+        }
+        function mouseout(){
+            console.log("mouseoutt")
+        }
+    </script>
+</body>
+</html>
